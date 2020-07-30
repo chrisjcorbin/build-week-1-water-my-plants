@@ -1,0 +1,141 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;
+}
+
+/*SHOW LAYOUT*/
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid grey; */
+    text-align:center;
+}
+
+/*POPPINS FONT*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*SIDE ANIMATION*/
+.menu {
+    font-weight: 100;
+    background: #efefef;
+    width: 150px;
+    height: 100%;
+    padding-left: 50px;
+    position: fixed;
+    z-index: 100;
+    -webkit-box-shadow: -3px 0px 5px 0px #186049;
+    box-shadow: -3px 0px 5px 0px #186049;
+    right: -130px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    color: #222
+  }
+  
+  .menu:hover, .menu:focus {
+    transform: translate3d(-130px, 0, 0);
+    animation-timing-function: 1s ease-in
+  }
+  
+  .menu .title {
+    top: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transform: rotate(270deg);
+    left: 10px;
+    font-weight: 800;
+    font-size: 15px
+  }
+  
+  .menu .nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-weight: 100
+  }
+  
+  .menu .nav li {
+    padding-bottom: 30px;
+    list-style-type: none
+  }
+  
+  .menu .nav li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+    -webkit-transition: all .3s
+  }
+  
+  .menu .nav li a:hover { 
+      color: #186049 
+}
+
+/*HEADER AND FOOTER*/
+#header_bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+#footer_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#footer_bar a{
+    text-decoration: none;
+    color: #186049;
+}
+
+/*RESPONSIVENESS*/
+@media(max-width: 800px){
+#header_left img{
+    height: auto;
+    width: 60%;
+}
+
+#header_right img{
+    height: auto;
+    width: 40%;  
+}
+
+#footer_top img{
+    height: auto;
+    width: 20%;
+}
+
+#footer_bottom a{
+    font-size: 85%;
+}
+}
+/*END OF FILE*/

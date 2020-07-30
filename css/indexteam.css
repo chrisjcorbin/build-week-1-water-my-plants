@@ -1,0 +1,140 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;
+}
+
+/*SHOW LAYOUT*/
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid grey;
+    text-align:center;
+}
+
+/*POPPINS FONT*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*INDEX AND TEAM*/
+#index_content_top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .5%;
+}
+
+#index_content_top h2{
+    font-size: 3rem;
+}
+
+#welcome_h2_2{
+    color: #186049;
+}
+
+#house_plant_pic{
+    height: auto;
+    width: 70%;
+}
+
+#ic_signup_btn{
+    height: auto;
+    width: 45%;
+    padding: 2%;
+}
+
+#index_content_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+#watering_can, #plant_data, #plant_notes{
+    height: auto;
+    width: 30%;
+    padding: 5%;
+}
+
+#watering_can img, #plant_data img, #plant_notes img{
+    height: auto;
+    width: 40%;
+    padding: 2%;
+}
+
+#watering_can h2,p, #plant_data h2,p, #plant_notes h2,p{
+    padding: 2%;
+}
+
+#teammates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+#teammates img{
+    height: auto;
+    width: 50%;
+    margin-top: 2%;
+}
+
+#teammates h2{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#teammate_1 h2,p, #teammate_2 h2,p, #teammate_3 h2,p, #teammate_4 h2,p, #teammate_5 h2,p, #teammate_6 h2,p{
+    padding: 1%;
+}
+
+/*RESPONSIVENESS*/
+@media(max-width: 800px){
+#welcome_left{
+    width: 40%;
+}
+
+#welcome_right{
+    width: 50%;
+}
+
+#index_content_top h2{
+    font-size: 2rem;
+}
+
+#ic_signup_btn{
+    height: auto;
+    width: 95%;
+}
+
+#teammates img{
+    height: auto;
+    width: 60%;
+}
+
+#teammate_1, #teammate_2, #teammate_3, #teammate_4, #teammate_5, #teammate_6{
+    flex-wrap: wrap;
+    width: 42%;
+}
+}
+/*END OF FILE*/

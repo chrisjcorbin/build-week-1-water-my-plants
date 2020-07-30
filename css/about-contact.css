@@ -1,0 +1,103 @@
+/* -------------- BASE STYLES ------------------- */
+
+html {
+    font-size:62.5%;
+}
+
+main {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-bottom: 5rem;
+    background-color: white;;
+}
+
+.bgColor {
+    background-color: #F8F6F5;
+}
+
+#footer_bottom {
+    font-size: 1.6rem;
+    padding: 0 3px;
+}
+
+.nav {
+    font-size: 1.6rem;
+}
+
+footer {
+    margin-top: 5rem;
+}
+
+/* -------------- ABOUT STYLES ------------------- */
+
+main img {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.about {
+    width: 50%;
+    margin: 0 auto;
+    height: 30vh;
+    padding-top: 6rem;
+}
+
+
+
+/* -------------- CONTACT STYLES ------------------- */
+
+form {
+    height: 50%;
+    padding-top: 3rem;
+}
+
+form div {
+    margin: 18px auto;
+}
+
+form input, form textarea {
+    padding: 5px;
+}
+
+form button {
+    padding: .5rem;
+    width: 80px;
+    border-radius: 8px;
+    background-color: #397D54;
+    color: white;
+}
+
+form button:hover {
+    width: 84px;
+    font-size: 1.62rem;
+    background-color: #306846;
+}
+
+
+
+/* -------------- MEDIA QUERIES ------------------- */
+
+/* @media(max-width: 800px){
+    
+} */
+
+@media (max-width: 500px){
+
+    .about {
+        padding-top: 3rem;
+        height: 70vh;
+    }
+
+    form {
+        height: 42%;
+        padding-top: .5rem;
+    }
+
+    main {
+        padding-bottom: 5rem;
+    }
+}
